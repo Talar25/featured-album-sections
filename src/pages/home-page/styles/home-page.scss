@@ -8,3 +8,51 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+
+.promo-banner-component {
+  // always remember to give the parent element a position
+  position: relative;
+
+  // give the parent element a width and height
+  // use max-width to make it responsive and constraint
+  width: 100%;
+  height: 128px;
+  max-width: 1088px;
+
+  // use flexbox to center the text vertically
+  display: flex;
+  align-items: center;
+
+  // give the parent element a border-radius with overflow hidden
+  // to make the image rounded
+  border-radius: 24px;
+  overflow: hidden;
+
+  & &__bg-img {
+    // give background image a position absolute
+    // because it is not part of the responsive content
+    position: absolute;
+
+    // use object-fit to make the image cover the whole container
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  & &__text {
+    // give text a position relative and z-index 1
+    // so that it is on top of the background image
+    position: relative;
+    z-index: 1;
+
+    // specify the text properties
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+
+    // properly position and contain the text
+    margin-left: 32px;
+    max-width: 250px;
+  }
+}
