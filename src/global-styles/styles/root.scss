@@ -37,7 +37,8 @@
     //font-sizes
 
     --font-size-big: 2.4rem;
-    --font-size-small: 1.8rem;
+    --font-size-medium: 1.8rem;
+    --font-size-small: 1.6rem;
 
     //font font-weight
     --font-weight-bold: 800;
@@ -50,13 +51,16 @@
 
     //border radius
     --regular-border-radius: 16px;
-    --big-border-radius: 24px;
+    --medium-border-radius: 24px;
+    --big-border-radius: 32px;
 }
 
-// //media 834px
-// @media(max-width: 52em){
-
-// }
+//media 834px
+@media(max-width: 52em){
+    html{
+        font-size: calc(62.5% * 0.9);
+    }
+}
 
 // //media 375px
 // @media(max-width: 23.5em){
