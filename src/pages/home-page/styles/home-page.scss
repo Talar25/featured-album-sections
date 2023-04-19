@@ -245,10 +245,11 @@
   .promo-banner-component{
     display: block;
     padding: 4.0rem 1.6rem;
-    height: 232px;
+    height: 200px;
 
     &__text {
       margin-left: 0 !important;
+      margin-bottom: 2.4rem;
     }
 
     & &__bg-img {
